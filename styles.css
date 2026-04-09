@@ -1,0 +1,304 @@
+/* CSS BY Asanti James */
+
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/* CSS RESET (use this RESET: https://meyerweb.com/eric/tools/css/reset/) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ROOT VARIABLES */
+:root {
+  --teal: #4CA7C0;
+  --purple: #484FB7;
+  --lavender: #6B8FE7;
+  --yellow: #E9BB57;
+  --pink: #D9526F;
+  --dark-gray: #1E1E1E;
+  --white: #ffffff;
+  --light-gray: #f2f2f2;
+  --max-width: 450px;
+}
+
+/* GLOBAL STYLES (mobile first/small) */
+html {
+  background-color: var(--lavender);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--purple);
+  color: var(--white);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  padding: 1rem 1rem 0.75rem;
+}
+
+h1,
+h2 {
+  font-family: "Kavoon", cursive;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.35rem;
+}
+
+header p {
+  font-size: 0.7rem;
+  font-style: italic;
+}
+
+nav {
+  background-color: var(--yellow);
+  padding: 0.75rem 0.9rem 1rem;
+  text-align: center;
+}
+
+nav h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--dark-gray);
+  margin-bottom: 0.6rem;
+}
+
+nav ul li {
+  background-color: var(--white);
+  color: var(--purple);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  margin-bottom: 0.45rem;
+  padding: 0.45rem;
+  border: 2px solid #ddd;
+}
+
+main {
+  padding: 0;
+}
+
+main > section:first-of-type {
+  padding: 0.75rem 0.5rem 0.5rem;
+}
+
+main > section:first-of-type > h2 {
+  font-size: 2em;
+  margin-bottom: 0.3rem;
+}
+
+main > section:first-of-type section h3,
+#pricing h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--yellow);
+  margin: 0.35rem 0 0.6rem;
+}
+
+article {
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+  border-radius: 10px;
+  padding: 1rem 0.85rem;
+  margin: 0 0.25rem 0.6rem;
+}
+
+article h4 {
+  font-size: 1.15em;
+  font-weight: 800;
+  color: var(--purple);
+  margin-bottom: 0.45rem;
+}
+
+article p {
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.icon {
+  width: 62px;
+  height: 62px;
+  margin-bottom: 0.75rem;
+  border-radius: 50%;
+}
+
+.teal {
+  background-color: var(--teal);
+}
+
+.lavender {
+  background-color: var(--lavender);
+}
+
+.pink {
+  background-color: var(--pink);
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+/* WHY CHOOSE US */
+#why-choose-us {
+  background-color: var(--pink);
+  padding: 0.75rem 0.5rem 1rem;
+}
+
+#why-choose-us h2 {
+  font-size: 2em;
+  margin-bottom: 0.75rem;
+}
+
+#why-choose-us ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+#why-choose-us li {
+  color: var(--dark-gray);
+  font-weight: 700;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  border-radius: 10px;
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#why-choose-us li:nth-child(1) {
+  background-color: var(--teal);
+}
+
+#why-choose-us li:nth-child(2) {
+  background-color: var(--lavender);
+}
+
+#why-choose-us li:nth-child(3) {
+  background-color: var(--yellow);
+}
+
+#why-choose-us li:nth-child(4) {
+  background-color: var(--white);
+}
+
+/* PRICING */
+#pricing {
+  padding: 0.75rem 0.5rem 0.75rem;
+}
+
+#pricing h2 {
+  font-size: 2em;
+  margin-bottom: 0.35rem;
+}
+
+table {
+  width: 58%;
+  margin: 0.25rem auto 1rem;
+  background-color: var(--white);
+  color: var(--dark-gray);
+}
+
+th,
+td {
+  border: 1px solid #cfcfcf;
+  padding: 0.45rem 0.35rem;
+  font-size: 0.72rem;
+}
+
+th {
+  background-color: var(--yellow);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/* TAKE FIRST STEP */
+#first-step {
+  background-color: var(--pink);
+  padding: 0.75rem 0.5rem 1rem;
+}
+
+#first-step h2 {
+  font-size: 2em;
+  margin-bottom: 0.45rem;
+}
+
+#first-step p {
+  font-size: 0.82rem;
+  line-height: 1.45;
+  margin-bottom: 0.85rem;
+}
+
+button {
+  display: block;
+  width: 86%;
+  margin: 0 auto;
+  background-color: var(--white);
+  color: var(--dark-gray);
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  border: none;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 3px 3px 0 var(--dark-gray);
+  padding: 0.9rem;
+  text-transform: uppercase;
+}
+
+/* FOOTER */
+footer {
+  padding: 1.2rem 0.75rem;
+  text-align: center;
+  font-size: 0.58rem;
+}
+
+footer p {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
